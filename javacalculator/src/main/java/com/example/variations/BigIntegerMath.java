@@ -3,14 +3,14 @@ import java.math.*;
 
 public class BigIntegerMath {
     private BigInteger c1,c2;
-    private boolean delenieNulou = false;
+    private boolean nasobenieNulou = false;
 
     
     
 
     public BigIntegerMath(String c1, String c2) {
         if (c1 == "0" || c2 == "0") {
-            delenieNulou = true;
+            nasobenieNulou = true;
             
 
         }else{
@@ -23,7 +23,7 @@ public class BigIntegerMath {
     }
 
     public String getMultiplied(){
-        if (delenieNulou) {
+        if (nasobenieNulou) {
             return "0";
         }else{
             c1 = c1.multiply(c2);
